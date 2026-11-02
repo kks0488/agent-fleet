@@ -1,0 +1,7 @@
+# Relative working directories are resolved from this file's directory.
+# A string command runs through /bin/sh. An array runs the listed arguments.
+
+[[jobs]]
+name = "sample-worker"
+workdir = ".."
+command = ["python3", "-u", "-c", "import time; print('sample worker ready', flush=True); time.sleep(3600)"]
